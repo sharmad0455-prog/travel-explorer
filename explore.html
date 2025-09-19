@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travel Explorer - Explore</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body >
+  <header>
+    <nav>
+      <h1 class="logo">Travel Explorer</h1>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="explore.html" class="active">Explore</a></li>
+      </ul>
+    </nav>
+  </header>
+<div class="explore-page">
+  <section class="search-section">
+    <h2>Search for a Destination</h2>
+    <input type="text" id="search" placeholder="Enter a city or country" />
+    <button id="searchBtn">Explore</button>
+  </section>
+
+  <section id="results">
+    <div id="photos" class="photos-grid"></div>
+    <div id="weather" class="weather-card"></div>
+  </section>
+</div>
+  <footer>
+    <p>&copy; 2025 Travel Explorer</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
