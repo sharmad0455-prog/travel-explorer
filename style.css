@@ -31,6 +31,7 @@ nav {
   font-size: 1.5rem;
   font-weight: bold;
 }
+
 .nav-links {
   list-style: none;
   display: flex;
@@ -232,4 +233,31 @@ footer {
   background: #0077b6;
   color: #fff;
   margin-top: 0;
+}
+/* Photos grid for tablets and small phones */
+@media (max-width: 768px) {
+  .photos-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 0.75rem;
+  }
+}
+
+/* Very small screens only (like 320px width) */
+@media (max-width: 400px) {
+  .photos-grid {
+    grid-template-columns: 1fr; /* single column only for very tiny devices */
+  }
+}
+@media (max-width: 768px) {
+  .hero-content h2 { font-size: 2.2rem; }
+  .hero-content p  { font-size: 1rem; }
+}
+@media (max-width: 768px) {
+  .countries, .thought, .search-section {
+    padding: 1.5rem 1rem;
+  }
+}
+@keyframes scroll {
+  0% {transform: translateX(0);}
+  100% {transform: translateX(-40%);}
 }
